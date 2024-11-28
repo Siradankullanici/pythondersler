@@ -1,0 +1,570 @@
+isim = "isiminizi giriniz"
+ali = '\nALI\t BABAPRO'.lower().capitalize()
+
+print(isim[::2].upper()+ ali[0::4], isim[0::4].lower().capitalize().startswith("is"))
+print(isim[0::4].lower().capitalize())
+
+sayi30 = 4.234
+
+sayi32 = 5
+
+sayi49 = 5**100
+
+print(sayi30)
+print(type(sayi30), type(sayi32))
+print(sayi49)
+
+sayi50 = 22.001 / 7
+
+print(sayi50)
+
+print(3 + 4)
+
+print(4 - 5)
+
+print(16 / 5.1)
+
+print(51 // 4)
+
+print(round(abs(3.2)** 3 , 4)) # .000000000001 sebep olan şey yuvarlanir
+
+print(isim[::2].upper()+ ali[0::4], isim[0::4].lower().capitalize().startswith("is") + 3)
+print(isim[0::4].lower().capitalize())
+
+print(3 + 5 * 6)
+
+print((3 + 2) * 4 - 3 == 17.0)
+
+sayi1 = 10
+
+sayi2 = 11
+
+sayi3 = 10
+print(sayi1 > sayi2 - sayi2)
+print(type(sayi30), type(sayi32))
+print(round(abs(3.2)** 3 , 4)) # .000000000001 sebep olan şey yuvarlanir
+
+print(sayi1 != sayi2)
+
+print(sayi2 <= sayi3 )
+
+a = 1
+
+b = a
+
+a = 5
+
+print(b)
+
+sayi4 = "100asd"
+sayi4 = "100"
+sayi8 = 100
+sayi37 = int(sayi4)
+print(type(sayi4))
+print(type(sayi8))
+print(sayi37 == sayi8)
+sayi100 = int(-10.9)
+print(sayi100)
+sayi101 = int(round(-10.9))
+print(sayi101)
+sayi201 = 123
+
+sayi203 = str(sayi201)
+
+print(sayi203)
+print(type(sayi203))
+
+i = 1
+
+i = i + 2
+
+i += 2
+
+i *= 5
+
+print(i)
+
+i /= 7
+
+print(i)
+
+i //= 7
+
+print(i)
+
+renklerim = ["Siyah", "Beyaz", "Sari", "Mavi", "Yeşil"]
+
+print(type(renklerim))
+
+print(renklerim)
+
+print(type(len(renklerim)))
+
+print(renklerim[1]) #0'dan başlar
+print(renklerim[2:])
+print(renklerim[:4])
+print(renklerim[::2])
+# input("cevap?")
+print(renklerim)
+renklerim.append("Gri")
+print(renklerim)
+renklerim.insert(0, "Pembe")
+print(renklerim)
+renklerim.remove("Pembe")
+print(renklerim)
+
+renklerim2 = ["Turuncu", "Pembis"]
+
+renklerim.append(renklerim2)
+print(renklerim)
+
+renklerim = ["Siyah", "Beyaz", "Sari", "Mavi", "Yeşil"]
+
+renklerim.extend(renklerim2)
+print(renklerim)
+renklerim.pop()
+
+silinen = renklerim.pop()
+print(renklerim)
+print(silinen)
+
+renklerim.reverse()
+
+print(renklerim)
+
+renklerim.sort()
+
+renklerim.reverse()
+renklerim.sort()
+renklerim.reverse()
+renklerim.sort(reverse = True)
+print(renklerim2)
+
+renklerim3 = ["Siyah", "Beyaz", "Sari", "Mavi", "Yeşil"]
+
+print(renklerim3)
+liste2 = sorted(renklerim3)
+print(liste2)
+print(renklerim3)
+print(min(renklerim3))
+sayilar = [1, 2, 39, 4, 3, 7, 8]
+print(max(renklerim3))
+print(sum(sayilar))
+
+for renk in renklerim3:
+    print(renk)
+
+print(list(enumerate(renklerim3)))
+print(list(enumerate(renklerim3, start=2)))
+print ("Siyah" in renklerim3)
+print ("Gri" in renklerim3)
+
+stringrenkler = "".join(renklerim3)
+print(stringrenkler)
+stringrenkler = " ".join(renklerim3)
+print(stringrenkler) #Aralarına baştaki arkadaşı koy mesela boşluk
+print(type(stringrenkler))
+stringrenkler = "".join(renklerim3)
+print(stringrenkler),
+stringrenkler = "-".join(renklerim3)
+renklerimpro = stringrenkler.split("-")
+print(renklerimpro)
+stringrenkler = " - ".join(renklerim3)
+renklerimpro = stringrenkler.split("-") #aynı muamleyi yapacağız yoksa arada boşluk olur
+print(renklerimpro)
+renklerimpro = "".join(renklerim3)
+print(renklerimpro)
+renklerimpro = str(renklerim3)
+renklerimpro = " - ".join(renklerim3)
+yazdir = print
+yazdir(renklerimpro)
+# renklerimpro2 = "Ma".split(renklerimpro) #Bu Ma olmasına sebep olur
+renklerimpro2 = renklerimpro.split("Ma")
+yazdir(renklerimpro2)
+
+demet = {"Sari", "Mavi", "Yeşil", "Kirmizi", "Siyah"}
+
+print(type(demet))
+demet2 = ("Sari", "Mavi", "Yeşil", "Kirmizi", "Siyah")
+print(type(demet2))
+print(len(demet))
+print(len(demet2))
+for kor in demet:
+    print(demet)
+    print(kor)
+
+# demet[2] = "Pembe" # Hatalı kod
+print(demet)
+for renkler in demet:
+    print(renkler)
+    print(demet)
+for renkler in demet2:
+    print(renkler)
+    print(demet2)    
+#demet2.append("Pembe") # Hatalı kod add olmalı
+#demet.append("Pembe") # Hatalı kod add olmalı demet ve kümede olmaz
+demet.add("SARI")
+print(demet),
+demet.remove("Sari") # Eğer yanlış girersem keyerror verir mesela demet.remove("Sari0")
+demet.discard("Sari0") # Bunda hata olmaz keyerror çünkü olmasa dahi hata vermez
+demet.discard("Sari")
+print(demet)
+kume1 = {"Sari", "Mavi", "Yeşil", "Kirmizi", "Siyah"}
+kume2 = {"Sari", "Mavi", "Yeşil", "Beyaz", "Gri"}
+print(kume1.intersection(kume2)) # Yer değiştirsem aynı
+print(kume1.union(kume2)) #Birliktelik ama aynıları göstermez
+print(kume1.difference(kume2)) #Bunda farklılık olur sıra değiştirirsem
+print(kume2.difference(kume1))
+yazdir("Sari" in kume1)
+yazdir("Gri" in kume1)
+yazdir("Gri" in kume1.union(kume2))
+bosliste1 = []
+bosliste2 = list()
+bosdemet1 = ()
+bosdemet2 = tuple()
+boskume2 = set()
+boskume1 = {} # BU!! bir sözlüktür
+print(type(boskume1))
+
+python = set("PYTHON")
+print(python)
+python2 = set((1, 2, 3, 4, 5))
+print(python2)
+kisi  = {"isim" : "ali" , "yas" : 20, "cinsiyet" : "m", "hobiler" : ["Sinema", "Konser", "Yazilim"]}
+print(kisi["isim"])
+print(kisi["cinsiyet"])
+kisi["isim"] = "Ahmet"
+print(kisi)
+kisi.update({"isim" : "Ahmet", "yas" : 30})
+print(kisi)
+kisi["id"] = 12345
+print(kisi)
+
+del kisi["id"]
+print(kisi)
+for x in kisi:
+    print(x)
+    print(kisi[x])
+print(kisi.keys())
+print(kisi.values())
+print(kisi.items)
+for k, v in kisi.items():
+    print(k, v)
+#print(kisi["id"]) #hata verir
+print(kisi.get("id"))
+print(kisi.get("isim"))
+print(kisi.get("isim0"))
+print(kisi.get("isim", "Bulunamadi"))
+print(kisi.get("id", "Bulunamadi"))
+# input( "asdf")
+print('asdfx')
+kitapismi = "Moby Dick"
+sayfasayisi = 195
+kitapagirligi = 13.45
+Yeni = True
+#isimler = input("İsminiz Nedir? ")
+#print("Merhaba " + isimler)
+#yemek = input("En sevdiğiniz yemek? ")
+#isminiznedir = input("İsminiz Nedir? ")
+#print(isminiznedir + " " + yemek + " " + "Sever")
+if False:
+   print("Kosul yanlis")
+   print("Halen if blogumuz icindeyiz")
+if True:
+   print("Kosul dogru")
+   print("Halen if blogumuz icindeyiz")
+if 3 + 5 == 8:
+    print("3+5=8")
+a = 10
+b = 7
+if a == b:
+    print("a = b")
+if a > b:
+    print("a > b")
+if a != b:
+    print("a !=b b")
+c = 5 
+d = 5
+if c != d:
+    print("c != d")
+else:
+    print("c = d")
+renk = "Siyah"
+if renk == "Beyaz":
+   print("Beyaz")
+elif renk == "Sari":
+    print("Sari")
+elif renk == "Mavi":
+    print("Mavi")
+else: 
+    print("Hic biri")
+
+a = 5
+
+b = 8 
+
+c = 10
+
+if a < b or c > a:
+    print("koşul doğru")
+else:
+    print("koşul yanliş")
+
+if a < b and c > a: # Her ikisi doğru olmak zorunda
+    print("koşul doğru")
+else:
+    print("koşul yanliş")
+
+liste = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+a = 4
+if a in liste:
+    print("Listede var")
+else:
+    print("Listede yok") # Listede yoksa tetiklenir
+
+isim = "Python"
+
+a = "p"
+
+if a in isim:
+    print("Listede var")
+else:
+    print("Listede yok") # Küçük p diye yok
+
+if not a in isim:
+    print("Listede yok")
+else: 
+    print("Listede var")
+
+a = 8 
+b = 10
+if not a == b: 
+    print("koşul doğru")
+else:
+    print("koşul yanliş")
+
+a = "python"
+b = "pytho"
+b + "n"
+print(a)
+print(b)
+
+if a == b:
+    print("a = b")
+else:
+    print("a != b")
+
+if a is b:
+    print("a = b")
+else:
+    print("a != b")
+    print(id(a))
+    print(id(b))
+isim = "Muhammet"
+yas = 31
+yas = str(yas)
+print(isim + " " + str(yas) + " " + "Yasinda")
+int()
+float()
+str()
+bool()
+
+x = 9
+
+y = 5
+
+""" print(x + y)
+print(x - y)
+print(x * y)
+print(x / y)
+
+ """
+
+print(x // y) #1.8'den 1
+print(x % y) #Kalan bulma
+print(x ** y)
+#sayigirme = int(input("Sayi giriniz: "))
+#sayigirme2 = int(input("Ikinci sayiyi giriniz: "))
+#
+#print(int(sayigirme) + int(sayigirme2))
+
+print(round(9.8))
+print(abs(-9))
+import math
+print(math.sqrt(9))
+
+print(min(9, 10, 56))
+print(max(9, 10, 56))
+mektup = """merhaba beyfendi
+napiyosunuz beyfendi""" #aynen kaydedildi
+isim = 'Muhammet'.capitalize() # ilk harfini büyük yap
+print(isim)
+print(isim[0])
+print(isim[0:4])
+print(isim[-1])
+print(isim[-4:-1])
+print(len(isim))
+print(isim.capitalize())
+isim = "python"
+print(isim.find("th"))  # Çıktı: 2
+print(isim.replace("th", "yh"))
+#isimnedir = input("İsminiz nedir: ")
+#print(isimnedir.capitalize())
+yagmurlu = False
+gunesli = True
+if yagmurlu:
+    print("hava yagmurlu")
+elif gunesli:
+    print("hava gunesli")
+else: 
+    print("Bilinmeyen durum") #ilk kontrol edilen if
+ehliyet = False
+araba = True
+if ehliyet and araba:
+    print("araba kullanabilirsiniz")
+elif araba and not ehliyet:
+    print("Bizim sürücü kursunu tercih ederek araba kullanmay başlayabilirsiniz.")
+elif ehliyet or araba:
+    print("Araba kullanmana çok az kaldi")
+else:
+    print("Araba kullanman icin daha cok zaman var")
+
+sicaklik = -5
+
+if sicaklik > 30:
+    print("hava cok sicak")
+elif sicaklik < 0:
+    print("hava cok soguk")
+elif sicaklik >= 0:
+    print("hava cok soguk degil")
+
+yas = 18
+okul = False
+
+#yas = int(input("yasiniz kac?: "))
+
+#okul = (input("okula gidiyon mu? evet/hayir: ").lower())
+
+if yas >= 18 and okul == "hayir":
+    print("askere gitme yasiniz geldi")
+elif yas >= 18 and okul == "evet":
+    print("okulunuz bitince askere gideceksiniz")
+elif yas < 18 and okul == "evet":
+    print("Askere gitmene daha cok var")
+else:
+    print("okula git")
+
+liste = [1, 2, 3, 4, 5, 6]
+
+for rakam in liste:
+    print(rakam)
+
+isim = "Ahmet"
+
+for harf in isim:
+    print(harf)
+
+demet = {1, 2, 3, 4}
+
+for i in demet:
+    print(i)
+
+for i in range(0,10,2): #3. argüman ikişer ikişer git
+    print(i)
+
+sonuc = 1
+for i in range(0,10):
+   sonuc *= 2
+print(sonuc)
+liste1 = ["a", "b", "c"]
+liste2 = [1, 2, 3]
+
+for harf in liste1:
+    for rakam in liste2:
+        print(harf, rakam)
+
+liste = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+for i in liste:
+    if i == 3:
+        print("3'ü atladik.")
+        continue # break kullansam durar
+    print(i)
+
+liste = range(100)
+
+for i in liste:
+    if i %3 != 0:
+        continue
+    if i == 81:
+        break
+    print(i) 
+#import os
+#os.system('cls')
+#while True:
+#    print("yok oldun")
+x = 2
+y = 3
+while x < 10:
+    print(x)
+    x += 1
+print("x = ", x)
+
+x = 2 #tekrar 2 yapıyoruz yoksa 10
+while x * y < 1000:
+    print(x, y)
+    x += 2
+    y += 2
+
+i = 1
+#while True:
+#    print(i)
+#    i += 1
+#    if i == 10000:
+#        break # belirtmezsem sonsuza kadar devam
+"""     if i %2 == 0:
+        i+= 1 # bunu unutursam yani arttırmazsam sadece bir kez 1 gösterir ve devam eder program çünkü 2 çift
+        continue
+    print(i)
+    i += 1 #bunu unutursam yani attırmazsam sadece 1 yazar sürekli devamlı
+    if i == 1000:
+        break #shift+alt+a """
+print("1")
+print("2")
+print("3")
+print("4")
+print("5")
+i = 1 
+#while i <= 1000:
+#    print(i)
+#    i = i + 1
+isciler = ["Mehmet", "Ahmet", "Abdullah", "Kerim" "Ali"]
+print(isciler[0])
+print(isciler[0:3])
+
+sayi1 = int(input("sayi gir: "))
+
+sayi2 = int(input("sayi gir yine: "))
+
+sayi3 = input("hangi islemi yapacagini gir: (+, -, :, *, **)")
+
+if sayi3 == "+":
+    sonuc = sayi1 + sayi2
+    print(sonuc)
+elif sayi3 == "-":
+    sonuc = sayi1 - sayi2
+    print(sonuc)
+elif sayi3 == "*":
+    sonuc = sayi1 * sayi2
+    print(sonuc)
+elif sayi3 == ":":
+    sonuc = sayi1 / sayi2
+    print(sonuc)
+elif sayi3 == "**":
+    sonuc = sayi1 ** sayi2
+    print(sonuc)    
+else:
+    print("Gecersiz islem")
+#Belki while ekleyebilirim
+#Daha onca şey var string yanına . ekleyip eklediğimiz şeyler fstrip gibi ama onları sadece okudum yazmadım
