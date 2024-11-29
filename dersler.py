@@ -568,3 +568,127 @@ else:
     print("Gecersiz islem")
 #Belki while ekleyebilirim
 #Daha onca şey var string yanına . ekleyip eklediğimiz şeyler fstrip gibi ama onları sadece okudum yazmadım
+#sayi = input("Bir sayi giriniz:") #stringdir ondan int çevir
+#print(type(int(sayi)))
+#sayi = int(input("Bir sayi giriniz: "))
+
+#faktoriyel = 1
+
+#i = 2
+#while i <= sayi: #while aynı i += 1 ekstra olarak ekledim for in rangede yoktu
+#for i in range(1, sayi + 1): #1 yazmazsam faktoriyel 0 ile carpar sıfır 0 olur
+#    faktoriyel  *= i
+#    i += 1
+#print(f"{sayi}! = {faktoriyel}")
+# artıra artıra çarpar 5 x 4 x 3 x 2 x 1 = 120
+#i = sayi
+#liste = range(1000000)
+#while i <= sayi:
+#    i /= sayi 
+#    if i in liste:
+
+#     print(i)
+#    elif i == 0:
+#      break   
+""" asalbulucu2 = sayi - 1
+asalbulucu2 = range(asalbulucu)
+print(asalbulucu2)
+print(type(asalbulucu2))
+asalbulucu2 = asalbulucu2[1:]
+print(asalbulucu2)
+bolunensayi = 1 # Kendisi de bölen olduğu için 1 olacak
+for sayi in asalbulucu2:
+    if sayi % asalbulucu != 0:
+        bolunensayi += 1
+        continue
+print(bolunensayi) """ 
+sayi = int(input("Lütfen geçerli bir sayi giriniz: "))
+
+bolensayi = 0
+for i in range(1, sayi + 1):
+    if sayi % i == 0:
+        bolensayi += 1
+print(bolensayi)
+print(f"{sayi} sayisinin {bolen_sayisi} tanesi vardir")
+sayi = int(input("Lütfen geçerli bir sayi giriniz: "))
+
+prime = True
+for i in range(2, sayi): #bütün doğal sayılar 1'e bölünür
+    if sayi %i == 0:
+        prime = False
+        break
+if prime == True:
+    print(f"{sayi} sayisi asaldir")
+else:
+    print(f"{sayi} sayisi asal degildir")
+sayi = int(input("Bir sayi giriniz: "))
+
+toplam = 0
+
+gecici_sayi = sayi
+
+while gecici_sayi != 0:
+
+   basamak = gecici_sayi % 10
+   toplam += basamak
+   gecici_sayi //= 10
+
+print(toplam)
+
+#str_sayi = str(sayi)
+#for rakam in str_sayi:
+#    toplam += int(rakam)
+# ikinci yöntem
+#print(toplam)
+#sayi1 = int(input("bir sayi giriniz 1/5: "))
+#sayi2 = int(input("bir sayi giriniz 2/5: "))
+#sayi3 = int(input("bir sayi giriniz 3/5: "))
+#sayi4 = int(input("bir sayi giriniz 4/5: "))
+#sayi5 = int(input("bir sayi giriniz 5/5: "))
+#if sayi1 > sayi2 and sayi1 > sayi3 and sayi1 > sayi4 and sayi1 > sayi5:
+#    print(f"En büyük sayi bulundu:{sayi1}")
+#if sayi1 < sayi2 and sayi1 < sayi3 and sayi1 < sayi4 and sayi1 < sayi5:
+#    print(f"En küçük sayi bulundu:{sayi1}")    
+sayilar = input("beş tane sayi giriniz: ")
+sayilar_listesi = sayilar.split()
+sayilar_listesi = [int(sayi) for sayi in sayilar_listesi]
+en_kucuk = min(sayilar_listesi)
+en_buyuk = max(sayilar_listesi)
+print(f"En küçük: {en_kucuk} En büyük: {en_buyuk}")
+liste []
+for i in range(5):
+    sayi int(input("Bir sayi giriniz: "))
+    liste.append(sayi)
+print(f"en büyük sayi : {max(liste)}")
+print(f"en küçük sayi : {min(liste)}")
+sayi = int(input("Bir sayi giriniz: "))
+karekok = sayi ** 0.5
+
+if karekok == int(karekok):
+    print("Tamkare")
+else:
+    print("Tamkare değil")
+yazi = (input("Bir yazi giriniz: "))
+yazilar_sayisi = 0
+for harf in yazi:
+    print(harf)
+    
+
+for i in yazilar:
+    if i == i:
+     yazilar_sayisi += 1
+     yazi = i
+print(f"{yazilar_sayisi}, {yazi}" )
+
+metin = input("Bir metin giriniz: ")
+
+sozluk = dict()
+
+for harf in metin:
+    if harf in sozluk:
+       sozluk[harf] += 1
+    else:
+       sozluk[harf] = 1
+
+for harf, adet in sozluk.items():
+    print(harf, adet)
