@@ -1,5 +1,6 @@
 sozluk = []
 asalsayisi = 0
+asalsayisi2 = []
 prime = True
 sayi = 3
 while asalsayisi < 10:
@@ -14,19 +15,14 @@ while asalsayisi < 10:
         sayi += 1
         sozluk.append(sayi)
         asalsayisi +=1
+        asalsayisi2.append(asalsayisi)
  else:
         print(f"{sayi} sayisi asal degildir")
         sayi += 1
-        
-liste1 = ["a", "b", "c"]
-liste2 = [1, 2, 3]
 
-for harf in liste1:
-    for rakam in liste2:
-        print(harf, rakam)
+tamsozluk = list(zip(sozluk, asalsayisi2))
 
-for asalsayisi, sayi in sozluk.items():
-    print(asalsayisi,sayi) 
+print(tamsozluk)
 
 """ sayi = int(input("Lütfen geçerli bir sayi giriniz: "))
 

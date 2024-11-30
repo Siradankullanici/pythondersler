@@ -217,7 +217,7 @@ print(kume1.difference(kume2)) #Bunda farklılık olur sıra değiştirirsem
 print(kume2.difference(kume1))
 yazdir("Sari" in kume1)
 yazdir("Gri" in kume1)
-yazdir("Gri" in kume1.union(kume2))
+yazdir("Gri" in kume1.uniofn(kume2))
 bosliste1 = []
 bosliste2 = list()
 bosdemet1 = ()
