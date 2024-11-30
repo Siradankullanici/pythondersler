@@ -7,14 +7,12 @@ while asalsayisi < 10:
     if sayi %i == 0:
         prime = False
         break
- if prime == True:
-    print(f"{sayi} sayisi asaldir")
-    sozluk.append(sayi)
-    asalsayisi += 1
-    sayi += 1
- else:
-    print(f"{sayi} sayisi asal degildir")
-    sayi += 1
+    if prime == True:
+        print(f"{sayi} sayisi asaldir")
+        sozluk.append(sayi)
+ sayi += 1
+    else:
+        print(f"{sayi} sayisi asal degildir")
 
 for asalsayisi, sayi in sozluk.items():
     print(asalsayisi,sayi) 
