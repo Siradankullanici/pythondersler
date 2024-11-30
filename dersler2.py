@@ -7,25 +7,17 @@ while asalsayisi < 10:
     if sayi %i == 0:
         prime = False
         break
-    if prime == True:
+ if prime == True:
         print(f"{sayi} sayisi asaldir")
+        sayi += 1
         sozluk.append(sayi)
- sayi += 1
-    else:
+        asalsayisi +=1
+ else:
         print(f"{sayi} sayisi asal degildir")
+        sayi += 1
 
 for asalsayisi, sayi in sozluk.items():
     print(asalsayisi,sayi) 
-
-""" 
-liste1 = ["a", "b", "c"]
-liste2 = [1, 2, 3]
-
-for harf in liste1:
-    for rakam in liste2:
-        print(harf, rakam)
-
-liste = [1, 2, 3, 4, 5, 6, 7, 8, 9] """
 
 """ sayi = int(input("Lütfen geçerli bir sayi giriniz: "))
 
@@ -48,6 +40,25 @@ sayi = int(input("Bir sayi giriniz: "))
 
 
 
+
+
+
+
+
+
+
+
+
+
+""" 
+liste1 = ["a", "b", "c"]
+liste2 = [1, 2, 3]
+
+for harf in liste1:
+    for rakam in liste2:
+        print(harf, rakam)
+
+liste = [1, 2, 3, 4, 5, 6, 7, 8, 9] """
 
 """ for harf in metin:
     if harf in sozluk:
