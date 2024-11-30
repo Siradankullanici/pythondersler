@@ -17,6 +17,13 @@ while asalsayisi < 10:
  else:
         print(f"{sayi} sayisi asal degildir")
         sayi += 1
+        
+liste1 = ["a", "b", "c"]
+liste2 = [1, 2, 3]
+
+for harf in liste1:
+    for rakam in liste2:
+        print(harf, rakam)
 
 for asalsayisi, sayi in sozluk.items():
     print(asalsayisi,sayi) 
