@@ -2,8 +2,8 @@ sozluk = []
 asalsayisi = 0
 asalsayisi2 = []
 prime = True
-sayi = 3
-while asalsayisi < 10:
+sayi = 0
+while asalsayisi <= 10000:
  for i in range(2, sayi): #bütün doğal sayılar 1'e bölünür
     if sayi %i == 0:
         prime = False
@@ -12,17 +12,27 @@ while asalsayisi < 10:
         prime = True
  if prime == True:
         print(f"{sayi} sayisi asaldir")
-        sayi += 1
         sozluk.append(sayi)
         asalsayisi +=1
         asalsayisi2.append(asalsayisi)
+        sayi += 1
  else:
         print(f"{sayi} sayisi asal degildir")
         sayi += 1
 
-tamsozluk = list(zip(sozluk, asalsayisi2))
+temizsozluk = []
+temizsozluksayisi = 0
+for i in sozluk:
+    if str(i).startswith("3") and str(i).endswith("7"):
+     temizsozluk.append(i)
+     temizsozluksayisi += 1
 
-print(tamsozluk)
+print(temizsozluk)
+print(temizsozluksayisi)
+
+#tamsozluk = list(zip(sozluk, asalsayisi2))
+
+#print(tamsozluk)
 
 """ sayi = int(input("Lütfen geçerli bir sayi giriniz: "))
 
