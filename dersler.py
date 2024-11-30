@@ -655,7 +655,7 @@ sayilar_listesi = [int(sayi) for sayi in sayilar_listesi]
 en_kucuk = min(sayilar_listesi)
 en_buyuk = max(sayilar_listesi)
 print(f"En küçük: {en_kucuk} En büyük: {en_buyuk}")
-liste []
+liste = []
 for i in range(5):
     sayi int(input("Bir sayi giriniz: "))
     liste.append(sayi)
@@ -692,3 +692,14 @@ for harf in metin:
 
 for harf, adet in sozluk.items():
     print(harf, adet)
+metin = input("Bir metin giriniz: ")
+
+metin2 = ""
+
+for harf in metin:
+    if harf == "a":
+     harf = "A"
+     metin2 += harf
+    else:
+     metin2 += harf
+print(metin2)
