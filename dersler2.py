@@ -7,6 +7,8 @@ while asalsayisi < 10:
     if sayi %i == 0:
         prime = False
         break
+    else:
+        prime = True
  if prime == True:
         print(f"{sayi} sayisi asaldir")
         sayi += 1
