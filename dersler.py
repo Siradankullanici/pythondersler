@@ -867,3 +867,48 @@ for sayi in range(100, 1000):
     if toplam == sayi:
         liste.append(sayi)
 print(liste)
+fibonacci_list = [1, 1]
+while len(fibonacci_list) != 100:
+      sayi = fibonacci_list[-1]
+      sayi2 = fibonacci_list[-2]
+      sayi3 = sayi2 + sayi
+      fibonacci_list.append(sayi3)
+print(fibonacci_list)
+fibonacci_list = []
+fibonacci_list.append(1)
+fibonacci_list.append(1)
+index = 2
+while True: 
+    fibonacci_list.append(fibonacci_list [index -2] + fibonacci_list[index -1])
+    index += 1
+    if len(fibonacci_list) == 100:
+        break
+print(fibonacci_list)
+fibonacci_list = []
+fibonacci_list.append(1)
+fibonacci_list.append(1)
+for i in range(2, 100):
+    fibonacci_list.append(fibonacci_list[i-2] + fibonacci_list[i-1])
+print(fibonacci_list)
+fibonacci_list = [1, 1]
+while True:
+      sayi = fibonacci_list[-1]
+      sayi2 = fibonacci_list[-2]
+      sayi3 = sayi2 + sayi
+      fibonacci_list.append(sayi3)
+      if len(str(fibonacci_list[-1])) == 100:
+        break
+print(fibonacci_list[-1])
+fibonacci_list = list()
+fibonacci_list.append(1)
+fibonacci_list.append(2)
+
+index = 2
+while True:
+    fibonacci_list.append(fibonacci_list[index -2] + fibonacci_list[index -1])
+    terim = fibonacci_list[index -2] + fibonacci_list[index -1]
+    if len(str(terim)) == 1000:
+        print(terim)
+        print(index)
+        break
+    index += 1
