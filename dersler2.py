@@ -6,13 +6,11 @@ liste3 = []
 ucbasamak = range(100, 1000)
 
 for sayi in ucbasamak:
-    birlesme = str(sayi)
-    for rakam in birlesme:
-      liste2.append(int(rakam))
-	  for eleman in liste2:
+    liste2.append(sayi)
+    for eleman in liste2:
         elemankup = eleman ** 3
-    	liste3.append(elemankup)
+        liste3.append(elemankup)
         toplam = sum(liste3)
-    	    if sayi == toplam:
-    	      liste.append(sayi)
+        if sayi == toplam:
+            liste.append(sayi)
 print(len(liste))
