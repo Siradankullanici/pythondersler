@@ -823,3 +823,47 @@ else:
     eleman_tmp.clear()
 print(liste2)
 print(len(liste2))
+# 3 basamaklı sayıların kaç tanaesi rakamların küplerine toplamına eşittir? **3 153 gibi = 1 küp 5 küp 3 küp farklı optimizasyonlar yapılabilir
+liste = list(range(100, 1000))
+liste2 = []
+liste3 = []
+liste4 = []
+while True:
+ for sayi in liste:
+    sayi2 = str(sayi)
+    for rakam in sayi2:
+        rakam2 = int(rakam)
+        kup = rakam2 ** 3
+        liste2.append(kup)
+        liste4.append(sayi)
+    toplam = int(sum(liste2))
+    toplam2 = int(sum(liste4))
+    if str(toplam) == str(toplam2):
+        liste3.append(toplam)
+        liste2.clear()
+        break
+    else:
+        liste2.clear()
+print(liste3)
+liste = []
+for sayi in range(100, 1000):
+     birler = sayi %10
+     onlar = (sayi // 10) % 10
+     yuzler = sayi // 100
+     kup_toplami = ((birler ** 3) + (onlar ** 3) + (yuzler ** 3))
+     if kup_toplami == sayi:
+        liste.append(sayi)
+print(len(liste))
+print(liste)
+liste = []
+
+for sayi in range(100, 1000):
+    toplam = 0
+    gecici_sayi = sayi
+    while gecici_sayi!= 0:
+        basamak = gecici_sayi %10
+        toplam += basamak ** 3
+        gecici_sayi //= 10
+    if toplam == sayi:
+        liste.append(sayi)
+print(liste)
