@@ -10,6 +10,6 @@ for eleman in liste1:
         harf_kup = harf_int ** 3
         liste3.append(harf_kup)
         toplam = sum(liste3)
-        if eleman == toplam:
+        if str(eleman) == str(toplam):
             liste2.append(sayi)
 print(len(liste2))
