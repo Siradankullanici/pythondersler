@@ -6,7 +6,7 @@ liste2 = []
 for eleman in liste1:
     elemankup = eleman ** 3
     liste2.append(elemankup)
-    toplam = sum(liste1)
+    toplam = sum(liste2)
     if eleman == toplam:
-        liste.append(sayi)
-print(len(liste))
+        liste2.append(sayi)
+print(len(liste2))
