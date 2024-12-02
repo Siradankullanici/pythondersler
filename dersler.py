@@ -813,7 +813,7 @@ for eleman in liste1:
         liste3.append(harf_kup)
         eleman_tmp.append(eleman)
 print(liste3)
-liste3_toplam = sum(int(liste3))          
+liste3_toplam = sum(liste3)          
 if str(eleman_tmp) == str(liste3_toplam):
     liste2.append(eleman)
     liste3.clear()
