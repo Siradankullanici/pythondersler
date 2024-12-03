@@ -980,3 +980,10 @@ fonk = buyuk_harfe_cevir
 sonuc = fonk("Huk0nD")
 
 print(sonuc)
+import math
+sonuc = math.factorial(6)
+print(sonuc)
+sonuc2 = math.sqrt(sonuc)
+print(sonuc2)
+sonuc3 = math.fabs(65) #flout abs
+print(int(sonuc3))
