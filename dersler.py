@@ -912,3 +912,71 @@ while True:
         print(index)
         break
     index += 1
+def selamla(isim)
+    print("Merhaba" + isim)
+
+selamla("Ali")
+
+def topla(x, y):
+    print(f"x + y = {x + y}")
+
+topla(3, 6)
+
+def carp(x, y):
+    print(f"x * y = {x * y}")
+
+carp(3, 6)
+
+def ortalama_hesapla(liste):
+    toplam = sum(liste)
+    adet = len(liste)
+    ortalama = toplam / adet
+    print(f"Girilen sayıların ortalaması: {ortalama}")
+
+ortalama_hesapla([3, 2, 5])
+
+def buyuk_harfe_cevir(metin):
+    metin = metin.upper()
+    print(metin)
+
+buyuk_harfe_cevir("Stringim ben ulan")
+def selamla(mesaj, isim= "Anonim"):
+    print(f"{mesaj} {isim}.")
+
+selamla("Merhaba", "Elif")
+def indirim_yap(fiyat,yuzde = 20):
+    indirim_miktarı = fiyat * (yuzde / 100)
+    indirimli_fiyat = fiyat - indirim_miktarı
+    print(f"İndirimli tutar: {indirimli_fiyat}")
+
+indirim_yap(50)
+def topla(x,y):
+    print(x + y)
+    return x + y # return olmazsa None gelir
+
+sonuc = topla(3, 8)
+
+print(sonuc)
+
+def ortalama_hesapla(x ,y):
+    return (x + y) / 2
+
+print(type(ortalama_hesapla)) # function
+print(type(ortalama_hesapla(2, 6))) # float
+
+a = ortalama_hesapla(2,6)
+b = ortalama_hesapla(6,10)
+print(a + b)
+def buyuk_harfe_cevir(metin):
+    return metin.upper()
+
+a = buyuk_harfe_cevir("AsDfG")
+ print(a)
+ def buyuk_harfe_cevir(metin):
+    return metin.upper() #() koymayı unutma
+
+fonk = buyuk_harfe_cevir
+
+sonuc = fonk("Huk0nD")
+
+print(sonuc)
