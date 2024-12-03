@@ -987,3 +987,27 @@ sonuc2 = math.sqrt(sonuc)
 print(sonuc2)
 sonuc3 = math.fabs(65) #flout abs
 print(int(sonuc3))
+from math import *
+import os
+sonuc = factorial(5)
+print(sonuc)
+sonuc2 = sqrt(5)
+print(sonuc2)
+from math import *
+import os
+sonuc = factorial(5)
+print(sonuc)
+sonuc2 = sqrt(5)
+print(sonuc2)
+import benim_matematik_modulum
+
+sonuc = benim_matematik_modulum.cember_cevresi(4)
+
+print(sonuc)
+from benim_matematik_modulum import cember_cevresi
+sonuc = cember_cevresi(4)
+print(sonuc)
+import benim_matematik_modulum as bmm
+
+sonuc = bmm.daire_alani(5)
+print(sonuc)
