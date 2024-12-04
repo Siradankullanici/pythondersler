@@ -657,7 +657,7 @@ en_buyuk = max(sayilar_listesi)
 print(f"En küçük: {en_kucuk} En büyük: {en_buyuk}")
 liste = []
 for i in range(5):
-    sayi int(input("Bir sayi giriniz: "))
+    sayi = int(input("Bir sayi giriniz: "))
     liste.append(sayi)
 print(f"en büyük sayi : {max(liste)}")
 print(f"en küçük sayi : {min(liste)}")
@@ -1011,3 +1011,105 @@ import benim_matematik_modulum as bmm
 
 sonuc = bmm.daire_alani(5)
 print(sonuc)
+import os
+import time
+import datetime
+
+import random
+
+for i in range(10):
+    print(random.random())
+import random
+
+for i in range(10):
+    print(random.uniform(10, 30))
+import random
+
+for i in range(10):
+    print(random.randint(1, 5)) #istisna üst sınır dahil
+
+import random
+
+for i in range(10):
+    print(random.randrange(1, 10, 2))
+import random
+
+liste = ["Siyah", "Beyaz", "Mavi", "Yeşil", "Gri", "Turuncu"]
+
+print(random.choice(liste))
+import random
+
+liste = ["Siyah", "Beyaz", "Mavi", "Yeşil", "Gri", "Turuncu"]
+
+random.sample(liste, 3)
+
+print(liste)
+import random
+
+liste = ["Siyah", "Beyaz", "Mavi", "Yeşil", "Gri", "Turuncu"]
+
+print(random.sample(liste, 3))
+import random
+
+zarlar = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+
+for i in range(1000000):
+    zar = random.randint(1, 6)
+    zarlar[zar] += 1
+
+for zar in zarlar:
+    print(f"{zar} gelme olasılığı: {zarlar[zar] / 1000000}")
+
+import random
+
+alti_alti = 0
+
+deneme_sayisi = 0
+
+while True:
+    deneme_sayisi += 1
+    zar1 = random.randint(1, 6)
+    zar2 = random.randint(1, 6)
+    if zar1 == 6 and zar2 == 6:
+        alti_alti += 1
+        if alti_alti == 10:
+           print(f"10 kere 6-6 gelmesi için zarlar {deneme_sayisi} kadar atıldı")
+           break
+import time
+
+zaman = time.time()
+print(zaman) # 1 Ocak 1970'den geçen zaman
+import time
+
+baslangic = time.time()
+
+liste = []
+
+for i in range(10000000):
+    liste.append(i)
+bitis = time.time()
+
+print(bitis - baslangic)
+import time
+
+zaman = time.ctime(100000000) #ne kadar saniye geçerse o kadar zaman
+print(type(zaman)) #str string
+import time
+
+zaman = time.localtime(10000000)
+print(zaman)
+import time
+
+zaman2 = time.localtime()
+zaman = time.asctime() #buna 10000 atamayamazsın ascitime(10000) gbi
+
+print(zaman)
+
+zaman = time.strftime("%d:%m:%Y: %H:%M:%S") #eğer hiç bir yazmazsan geçerli zamanı yazdırır çift tıklayıp modülün içine bakabilirsin pycharmda
+print(zaman)
+zaman = time.strftime("%d:%m:%Y: %I:%M:%S %p") #eğer hiç bir yazmazsan geçerli zamanı yazdırır çift tıklayıp modülün içine bakabilirsin pycharmda
+import time
+
+print("Program başlatıldı")
+time.sleep(3)
+print("Program sonlandı")
