@@ -1113,3 +1113,84 @@ import time
 print("Program başlatıldı")
 time.sleep(3)
 print("Program sonlandı")
+from datetime import date
+
+bugun = date.today()
+
+print(bugun)
+print(type(bugun))
+print(bugun.day)
+print(bugun.month)
+print(bugun.year)
+print(bugun.weekday())
+print(bugun.isoweekday())
+from datetime import date
+gecmis_tarih = date(2015, 8, 13)
+print(gecmis_tarih)
+from datetime import date
+bugun = date.today()
+gecmis_tarih = date(2015, 8, 13)
+print(gecmis_tarih.weekday())
+gecen_zaman = bugun - gecmis_tarih
+print(gecen_zaman)
+print(type(gecen_zaman))
+from datetime import date
+from datetime import datetime
+
+suan = datetime.now()
+print(suan)
+print(type(suan))
+print(suan.month)
+print(suan.day)
+print(suan.hour)
+from datetime import date
+from datetime import datetime
+from datetime import ctime
+suan = datetime.now()
+print(suan)
+print(suan.ctime())
+print(suan.date())
+print(suan.time())
+print(suan.date().month) # tarih döndür ondan da ay
+from datetime import datetime
+suan = datetime.now()
+gecmis_an = datetime(2014, 5, 26, 6, 45, 32, 123)
+
+print(suan - gecmis_an)
+from datetime import datetime
+from datetime import date
+bugun = date.today()
+suan = datetime.now()
+print(bugun.strftime("%d:%m:%Y %A"))
+print(suan.strftime("%d-%m-%Y-%A"))
+print(datetime.strftime(bugun, "%d:%m:%Y"))
+print(suan.strftime("%d:%m.%Y"))
+from datetime import datetime
+from datetime import date
+from datetime import timedelta
+
+suan = datetime.now()
+tdelta = timedelta(days=7, hours=5, seconds=69)
+print(suan + tdelta)
+print (suan - tdelta)
+from datetime import datetime
+from datetime import date
+from datetime import timedelta
+
+suan = datetime.now()
+print(suan.month)
+print(suan.date())
+print(suan.day)
+print(suan.year)
+print(suan.second)
+print(suan.year)
+from datetime import datetime
+from datetime import date
+from datetime import timedelta
+
+pazar_sayisi = 0 
+for yil in range(1901, 2001): #2001 dahil etmeyecek her zaman başlangıç dahil olur
+    for ay in range(1,13):
+        if datetime(yil, ay, 1).weekday() == 6: #Ayın 1. günü
+            pazar_sayisi += 1
+print(pazar_sayisi)
